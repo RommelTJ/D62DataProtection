@@ -14,6 +14,14 @@
 
 @implementation AppDelegate
 
+- (void)applicationProtectedDataDidBecomeAvailable:(UIApplication *)application {
+    NSLog(@"%s", __func__);
+}
+
+- (void)applicationProtectedDataWillBecomeUnavailable:(UIApplication *)application {
+    NSLog(@"%s", __func__);
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

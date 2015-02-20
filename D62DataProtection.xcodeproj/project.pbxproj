@@ -168,6 +168,12 @@
 				TargetAttributes = {
 					77D9FE121A96E84A001CE02B = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 4L2V3AB2J2;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+						};
 					};
 					77D9FE2B1A96E84A001CE02B = {
 						CreatedOnToolsVersion = 6.1.1;
