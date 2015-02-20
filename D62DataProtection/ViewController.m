@@ -59,7 +59,9 @@
             NSLog(@"%@", myError);
         } else {
             NSLog(@"Success!");
-            //self.myTextView.text =[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]; Needs to run on main thread.
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.myTextView.text =[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+            });
         }
         [[UIApplication sharedApplication] endBackgroundTask:taskID];
     });
