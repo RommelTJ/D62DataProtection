@@ -10,9 +10,27 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextView *myTextView;
+
 @end
 
 @implementation ViewController
+
+- (IBAction)doSaveNormal:(id)sender {
+}
+
+- (IBAction)doReadNormal:(id)sender {
+}
+
+- (IBAction)doSaveEncrypted:(id)sender {
+}
+
+- (IBAction)doReadEncrypted:(id)sender {
+}
+
+- (IBAction)doReadEncryptedNormal:(id)sender {
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
